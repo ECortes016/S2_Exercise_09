@@ -106,10 +106,22 @@
                 </div>
 
                 <div class="formRow">
+                    <label for="dish">What's your favorite dish?</label>
+                    <input type="text" name="favDish" id="dish" list="dishType">
+                    <datalist id="dishType">
+                        <option value="Antipasto Pizza"></option>
+                        <option value="Big Kahuna Pizza"></option>
+                        <option value="BBQ Chicken Pizza"></option>
+                        <option value="Mediterranean Herb Pizza"></option>
+                        <option value="Pasta Rolls"></option>
+                        <option value="Pesto Artichoke Pizza"></option>
+                    </datalist>
+                </div>
+
+                <div class="formRow">
                     <label for="dineSpin">How many times do you dine out per month?</label>
                     <input type="number" name="dineOut" id="dineSpin" value="1" step="1" min="0" max="20">
                 </div>
-
 
                 <div class="formRow">
                     <label for="dish">What's your favorite dish?</label>
@@ -172,6 +184,14 @@
                         <input type="radio" name="foodHot" id="hNo" value="no">
                     </fieldset>
                     </select>
+                </div>
+
+                <div class="formRow">
+                    <label for="rangeBox">Rate the oerall service <br>
+                        (0 = Poor 10 = Great)</label>
+                    0
+                    <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
+                    10
                 </div>
 
                 <label for="commBox">Tell us more about your experience!</label>
